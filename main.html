@@ -9,16 +9,16 @@
 <body>
 	<h1>Feedback Form</h1>
 	<form action="/submit" method="post">
-	<label for="name">Name</label>
-	<input required type="text" maxlength="50" minlength="3" placeholder="Enter your name">
+	<label for="name">Enter your name</label>
+	<input required type="text" name="name"  id="name" maxlength="50" minlength="3" placeholder="Enter your name">
 	<br><br>
-	<label for="portfolio">Portfolio</label>
-	<input required id="portfolio" type="url" placeholder="Enter you portfolio">	
+	<label for="portfolio">Enter your portfolio</label>
+	<input required id="portfolio" type="url" name="portfolio" placeholder="Enter you portfolio">	
 	<br><br>
-	<label for="favColor">favColor</label>
+	<label for="favColor">Enter your favColor</label>
 	<input type="color" name="favColor" id="favColor">
 	<br><br>
-	<label for="likeness">Likeness</label>
+	<label for="likeness">Enter your likeness</label>
 	<input type="range" name="likeness" id="likeness" min="1" max="100">
 	<button>Submit</button>
 	</form>
